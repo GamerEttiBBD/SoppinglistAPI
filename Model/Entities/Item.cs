@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Model.Entities; 
+﻿namespace Model.Entities; 
 
 [Table("ITEMS")]
 public class Item {

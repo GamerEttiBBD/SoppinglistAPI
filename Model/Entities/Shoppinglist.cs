@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Model.Entities; 
+﻿namespace Model.Entities; 
 
 [Table("SHOPPINGLISTS")]
 public class ShoppingList {
@@ -13,4 +10,10 @@ public class ShoppingList {
     [Column("SHOPPINGLIST_NAME")]
     [Required, StringLength(45)]
     public string Name { get; set; } = null!;
+
+    public Cluster Cluster { get; set; } = null!;
+    
+    [Column("CLUSTER_ID")]
+    [Required]
+    public int ClusterId { get; set; }
 }
